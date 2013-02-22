@@ -64,7 +64,8 @@ AR = ar
 ARFLAGS = cru
 libkspool_a_AR = $(AR) $(ARFLAGS)
 libkspool_a_LIBADD =
-am_libkspool_a_OBJECTS = ks_pool.$(OBJEXT) ks_alloc.$(OBJEXT)
+am_libkspool_a_OBJECTS = ks_pool.$(OBJEXT) ks_alloc.$(OBJEXT) \
+	ks_log.$(OBJEXT)
 libkspool_a_OBJECTS = $(am_libkspool_a_OBJECTS)
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -172,8 +173,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 noinst_LIBRARIES = libkspool.a
-libkspool_a_SOURCES = ks_pool.c ks_alloc.c
-EXTRA_DIST = include/ks_pool.h include/ks_alloc.h
+libkspool_a_SOURCES = ks_pool.c ks_alloc.c ks_log.c
+EXTRA_DIST = include/ks_pool.h include/ks_alloc.h include/ks_log.h
 INCLUDES = -I./include/
 all: all-am
 
@@ -224,6 +225,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ks_alloc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ks_log.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ks_pool.Po@am__quote@
 
 .c.o:

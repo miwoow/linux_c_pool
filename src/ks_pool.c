@@ -1,5 +1,6 @@
 #include "ks_alloc.h"
 #include "ks_pool.h"
+#include "ks_log.h"
 
 ks_pool_t *
 ks_pool_create(size_t size)
@@ -21,7 +22,7 @@ ks_pool_create(size_t size)
 	p->current = p;
 	p->large = NULL;
 
-	printf("ks_pool_create ok max=%ld\n", p->max);
+	ks_log_error(KS_LOG_LEVEL_DEBUG, "ks_pool_create ok max=%ld\n", p->max);
 
 	return p;
 }
@@ -36,13 +37,13 @@ ks_pool_destroy(ks_pool_t *pool)
 		if (l->alloc) {
 			free(l->alloc);
 			l->alloc = NULL;
-			printf("free one large.\n");
+			ks_log_error(KS_LOG_LEVEL_DEBUG, "free one large.\n");
 		}
 	}
 
 	for (p = pool, n = p->d.next; ;p = n, n = n->d.next) {
 		free(p);
-		printf("free one pool.\n");
+		ks_log_error(KS_LOG_LEVEL_DEBUG, "free one pool.\n"); 
 		if (n == NULL) {
 			break;
 		}
@@ -58,7 +59,7 @@ ks_reset_pool(ks_pool_t *pool)
 	for (l = pool->large; l; l = l->next) {
 		if (l->alloc) {
 			free(l->alloc);
-			printf("reset one large\n");
+			ks_log_error(KS_LOG_LEVEL_DEBUG, "reset one large\n");
 		}
 	}
 	pool->large = NULL;
@@ -66,7 +67,7 @@ ks_reset_pool(ks_pool_t *pool)
 	for (p = pool; p; p=p->d.next) {
 		p->d.last = (u_char *)p + sizeof(ks_pool_t);
 	}
-	printf("reset one pool\n");
+	ks_log_error(KS_LOG_LEVEL_DEBUG, "reset one pool\n");
 }
 
 void*
@@ -81,15 +82,15 @@ ks_palloc(ks_pool_t *pool, size_t size)
 			m = ks_align_ptr(p->d.last, KS_ALIGNMENT);
 			if ((size_t)(p->d.end - m) >= size) {
 				p->d.last = m + size;
-				printf("alloc one size.%ld\n", size);
+				ks_log_error(KS_LOG_LEVEL_DEBUG, "alloc one size.%ld\n", size);
 				return m;
 			}
 			p = p->d.next;
 		}while(p);
-		printf("alloc one block.size %ld\n", size);
+		ks_log_error(KS_LOG_LEVEL_DEBUG, "alloc one block.size %ld\n", size);
 		return ks_palloc_block(pool, size);
 	}
-	printf("alloc one large.size %ld\n", size);
+	ks_log_error(KS_LOG_LEVEL_DEBUG, "alloc one large.size %ld\n", size);
 	return ks_palloc_large(pool, size);
 }
 
@@ -219,7 +220,7 @@ ks_pfree(ks_pool_t *pool, void *p)
 		if (p == l->alloc) {
 			free(l->alloc);
 			l->alloc = NULL;
-			printf("free one larg space.\n");
+			ks_log_error(KS_LOG_LEVEL_DEBUG, "free one larg space.\n");
 			return 0;
 		}
 	}

@@ -20,7 +20,8 @@ ks_pool.o: ks_pool.c include/ks_alloc.h include/ks_global.h \
  /usr/include/bits/string2.h /usr/include/bits/string3.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h include/ks_pool.h
+ /usr/include/stdint.h /usr/include/bits/wchar.h include/ks_pool.h \
+ include/ks_log.h
 
 include/ks_alloc.h:
 
@@ -113,3 +114,5 @@ include/ks_global.h:
 /usr/include/bits/wchar.h:
 
 include/ks_pool.h:
+
+include/ks_log.h:

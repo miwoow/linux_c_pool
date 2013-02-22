@@ -64,7 +64,8 @@ AR = ar
 ARFLAGS = cru
 libkspool_a_AR = $(AR) $(ARFLAGS)
 libkspool_a_LIBADD =
-am_libkspool_a_OBJECTS = ks_pool.$(OBJEXT) ks_alloc.$(OBJEXT)
+am_libkspool_a_OBJECTS = ks_pool.$(OBJEXT) ks_alloc.$(OBJEXT) \
+	ks_log.$(OBJEXT)
 libkspool_a_OBJECTS = $(am_libkspool_a_OBJECTS)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -84,11 +85,11 @@ am__can_run_installinfo = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/xudong/source/linux_c_pool/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/xudong/mygit/linux_c_pool/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/xudong/source/linux_c_pool/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/xudong/source/linux_c_pool/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/xudong/source/linux_c_pool/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/xudong/mygit/linux_c_pool/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/xudong/mygit/linux_c_pool/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/xudong/mygit/linux_c_pool/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -113,7 +114,7 @@ LDFLAGS =
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/xudong/source/linux_c_pool/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/xudong/mygit/linux_c_pool/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
 PACKAGE = test
@@ -129,10 +130,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 VERSION = 1.0
-abs_builddir = /home/xudong/source/linux_c_pool/src
-abs_srcdir = /home/xudong/source/linux_c_pool/src
-abs_top_builddir = /home/xudong/source/linux_c_pool
-abs_top_srcdir = /home/xudong/source/linux_c_pool
+abs_builddir = /home/xudong/mygit/linux_c_pool/src
+abs_srcdir = /home/xudong/mygit/linux_c_pool/src
+abs_top_builddir = /home/xudong/mygit/linux_c_pool
+abs_top_srcdir = /home/xudong/mygit/linux_c_pool
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -151,7 +152,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/xudong/source/linux_c_pool/install-sh
+install_sh = ${SHELL} /home/xudong/mygit/linux_c_pool/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -172,8 +173,8 @@ top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
 noinst_LIBRARIES = libkspool.a
-libkspool_a_SOURCES = ks_pool.c ks_alloc.c
-EXTRA_DIST = include/ks_pool.h include/ks_alloc.h
+libkspool_a_SOURCES = ks_pool.c ks_alloc.c ks_log.c
+EXTRA_DIST = include/ks_pool.h include/ks_alloc.h include/ks_log.h
 INCLUDES = -I./include/
 all: all-am
 
@@ -224,6 +225,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./$(DEPDIR)/ks_alloc.Po
+include ./$(DEPDIR)/ks_log.Po
 include ./$(DEPDIR)/ks_pool.Po
 
 .c.o:
