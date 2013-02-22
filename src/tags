@@ -1,0 +1,180 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = cru$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libkspool_a_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = include\/ks_pool.h include\/ks_alloc.h$/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+INCLUDES	Makefile	/^INCLUDES = -I.\/include\/$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+KS_ALIGNMENT	include/ks_alloc.h	7;"	d
+KS_ALLOC_H	include/ks_alloc.h	2;"	d
+KS_DEFAULT_POOL_SIZE	include/ks_global.h	10;"	d
+KS_GLOBAL_H	include/ks_global.h	2;"	d
+KS_MAX_ALLOC_FROM_POOL	include/ks_global.h	9;"	d
+KS_POOL_ALIGNMENT	include/ks_global.h	8;"	d
+KS_POOL_H	include/ks_pool.h	2;"	d
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	Makefile	/^LIBRARIES = $(noinst_LIBRARIES)$/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = test$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = xdsecret1@gmail.com$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = test$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = test 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = test$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libkspool_a_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = $/;"	m
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+_ks_pool_large_t	include/ks_pool.h	/^typedef struct _ks_pool_large_t {$/;"	s
+abs_builddir	Makefile	/^abs_builddir = \/home\/xudong\/source\/linux_c_pool\/src$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/xudong\/source\/linux_c_pool\/src$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/xudong\/source\/linux_c_pool$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/xudong\/source\/linux_c_pool$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+alloc	include/ks_pool.h	/^	void *alloc;$/;"	m	struct:_ks_pool_large_t
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = \\$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am_libkspool_a_OBJECTS	Makefile	/^am_libkspool_a_OBJECTS = ks_pool.$(OBJEXT) ks_alloc.$(OBJEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+current	include/ks_pool.h	/^	ks_pool_t *current;$/;"	m	struct:ks_pool_s
+d	include/ks_pool.h	/^	ks_pool_data_t d;$/;"	m	struct:ks_pool_s
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+end	include/ks_pool.h	/^	u_char *end;$/;"	m	struct:__anon1
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+failed	include/ks_pool.h	/^	uintptr_t failed;$/;"	m	struct:__anon1
+host_alias	Makefile	/^host_alias = $/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/xudong\/source\/linux_c_pool\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+ks_align_ptr	include/ks_alloc.h	6;"	d
+ks_alloc	ks_alloc.c	/^ks_alloc(size_t size)$/;"	f
+ks_calloc	ks_alloc.c	/^ks_calloc(size_t size)$/;"	f
+ks_memalign	ks_alloc.c	/^ks_memalign(size_t alignment, size_t size)$/;"	f
+ks_palloc	ks_pool.c	/^ks_palloc(ks_pool_t *pool, size_t size)$/;"	f
+ks_palloc_block	ks_pool.c	/^ks_palloc_block(ks_pool_t *pool, size_t size)$/;"	f	file:
+ks_palloc_large	ks_pool.c	/^ks_palloc_large(ks_pool_t *pool, size_t size)$/;"	f	file:
+ks_pcalloc	ks_pool.c	/^ks_pcalloc(ks_pool_t *pool, size_t size)$/;"	f
+ks_pfree	ks_pool.c	/^ks_pfree(ks_pool_t *pool, void *p)$/;"	f
+ks_pmemalign	ks_pool.c	/^ks_pmemalign(ks_pool_t *pool, size_t size, size_t alignment)$/;"	f
+ks_pnalloc	ks_pool.c	/^ks_pnalloc(ks_pool_t *pool, size_t size)$/;"	f
+ks_pool_create	ks_pool.c	/^ks_pool_create(size_t size)$/;"	f
+ks_pool_data_t	include/ks_pool.h	/^}ks_pool_data_t;$/;"	t	typeref:struct:__anon1
+ks_pool_destroy	ks_pool.c	/^ks_pool_destroy(ks_pool_t *pool)$/;"	f
+ks_pool_large_t	include/ks_pool.h	/^}ks_pool_large_t;$/;"	t	typeref:struct:_ks_pool_large_t
+ks_pool_s	include/ks_pool.h	/^struct ks_pool_s {$/;"	s
+ks_pool_t	include/ks_pool.h	/^typedef struct ks_pool_s ks_pool_t;$/;"	t	typeref:struct:ks_pool_s
+ks_reset_pool	ks_pool.c	/^ks_reset_pool(ks_pool_t *pool)$/;"	f
+ks_status_t	include/ks_pool.h	/^typedef int ks_status_t;$/;"	t
+large	include/ks_pool.h	/^	ks_pool_large_t *large;$/;"	m	struct:ks_pool_s
+last	include/ks_pool.h	/^	u_char *last;$/;"	m	struct:__anon1
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libkspool_a_AR	Makefile	/^libkspool_a_AR = $(AR) $(ARFLAGS)$/;"	m
+libkspool_a_LIBADD	Makefile	/^libkspool_a_LIBADD =$/;"	m
+libkspool_a_OBJECTS	Makefile	/^libkspool_a_OBJECTS = $(am_libkspool_a_OBJECTS)$/;"	m
+libkspool_a_SOURCES	Makefile	/^libkspool_a_SOURCES = ks_pool.c ks_alloc.c$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+max	include/ks_pool.h	/^	size_t max;$/;"	m	struct:ks_pool_s
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+next	include/ks_pool.h	/^	ks_pool_t *next;$/;"	m	struct:__anon1
+next	include/ks_pool.h	/^	struct _ks_pool_large_t *next;$/;"	m	struct:_ks_pool_large_t	typeref:struct:_ks_pool_large_t::_ks_pool_large_t
+noinst_LIBRARIES	Makefile	/^noinst_LIBRARIES = libkspool.a$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/test$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/test$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/test$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/test$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = src$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
