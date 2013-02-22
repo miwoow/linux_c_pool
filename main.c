@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ks_pool.h"
+#include "ks_log.h"
 
 int
 main(int argc, char **argv)
 {
+	ks_log_file_path = "./log/ks.log";
 	ks_pool_t *pool=NULL;
 	pool = ks_pool_create(1024);
 	void *pa = ks_palloc(pool, 10);

@@ -1,0 +1,12 @@
+ks_pool_create ok max=968
+alloc one size.10
+alloc one size.10
+alloc one large.size 1004
+alloc one size.16
+alloc one size.10
+reset one large
+reset one pool
+alloc one large.size 1024
+alloc one size.16
+free one large.
+free one pool.
